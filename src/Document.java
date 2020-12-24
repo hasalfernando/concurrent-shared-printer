@@ -28,7 +28,7 @@ class Document
 
     public String getDocumentName( )  { return documentName ; }
 
-    public int    getNumberOfPages( ) { return numberOfPages ; }
+    public int getNumberOfPages( ) { return numberOfPages ; }
 
 
     public String toString( )

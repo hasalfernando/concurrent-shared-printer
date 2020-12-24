@@ -3,15 +3,18 @@ public class LaserPrinter implements ServicePrinter {
     private int printerId;
     private int paperLevel;
     private int tonerLevel;
-    private int noOfPrintedPapers;
+    private int noOfPrintedDocs;
 
     public LaserPrinter(int printerId){
         this.printerId = printerId;
     }
 
     public void printDocument(Document document){
-
-        System.out.println(document);
+        if(this.paperLevel >= document.getNumberOfPages() && this.tonerLevel >= document.getNumberOfPages()){
+            System.out.println(document);
+            this.paperLevel = this.paperLevel- document.getNumberOfPages();
+            this.tonerLevel = this.tonerLevel- document.getNumberOfPages();
+        }
     }
 
     public void replaceTonerCartridge( ){
@@ -24,7 +27,7 @@ public class LaserPrinter implements ServicePrinter {
 
     public String toString(){
         return "PrinterID: "+ this.printerId + "Paper Level: "+ this.paperLevel + "Toner Level: " + this.tonerLevel
-                + "Documents Printed: " + this.noOfPrintedPapers;
+                + "Documents Printed: " + this.noOfPrintedDocs;
     }
 
 }
