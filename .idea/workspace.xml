@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9f833d17-6c0d-45a5-95b5-7a5297718bad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Document.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LaserPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaserPrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Printer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,13 +17,13 @@
     <session id="-228519203">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="3" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -39,23 +38,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="917" />
+          <entry key="java" value="1594" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="917" />
+          <entry key="JAVA" value="1594" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" selection-start-column="20" selection-end-column="20" />
+            <state relative-caret-position="336">
+              <caret line="16" column="91" selection-start-line="16" selection-start-column="91" selection-end-line="16" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -72,12 +71,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LaserPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+            <state relative-caret-position="258">
+              <caret line="47" column="68" selection-start-line="47" selection-start-column="68" selection-end-line="47" selection-end-column="68" />
               <folding>
-                <element signature="e#212#213#0" expanded="true" />
-                <element signature="e#254#255#0" expanded="true" />
+                <element signature="e#1574#1575#0" expanded="true" />
+                <element signature="e#1623#1624#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Document.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="636">
+              <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -86,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/src/PaperTechnician.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="42">
-              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -94,17 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ServicePrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="216">
               <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Document.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -113,7 +112,7 @@
         <entry file="file://$PROJECT_DIR$/src/Printer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -137,9 +136,10 @@
         <option value="$PROJECT_DIR$/src/ServicePrinter.java" />
         <option value="$PROJECT_DIR$/src/Printer.java" />
         <option value="$PROJECT_DIR$/src/Document.java" />
-        <option value="$PROJECT_DIR$/src/LaserPrinter.java" />
-        <option value="$PROJECT_DIR$/src/PaperTechnician.java" />
         <option value="$PROJECT_DIR$/src/Technician.java" />
+        <option value="$PROJECT_DIR$/src/PaperTechnician.java" />
+        <option value="$PROJECT_DIR$/src/LaserPrinter.java" />
+        <option value="$PROJECT_DIR$/src/Student.java" />
       </list>
     </option>
   </component>
@@ -150,7 +150,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1849" />
+    <option name="x" value="1839" />
     <option name="y" value="-14" />
     <option name="width" value="1938" />
     <option name="height" value="1048" />
@@ -160,6 +160,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,8 +178,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,12 +222,13 @@
       <workItem from="1608381886270" duration="1782000" />
       <workItem from="1608554820680" duration="815000" />
       <workItem from="1608623091185" duration="856000" />
-      <workItem from="1608825092363" duration="4222000" />
+      <workItem from="1608825092363" duration="4471000" />
+      <workItem from="1608876065370" duration="7611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20402000" />
+    <option name="totallyTimeSpent" value="28262000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1911" y="-14" width="1938" height="1048" extended-state="6" />
@@ -277,24 +278,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LaserPrinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-          <folding>
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Technician.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -305,28 +288,46 @@
     <entry file="file://$PROJECT_DIR$/src/PaperTechnician.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServicePrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Printer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServicePrinter.java">
+    <entry file="file://$PROJECT_DIR$/src/LaserPrinter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        <state relative-caret-position="258">
+          <caret line="47" column="68" selection-start-line="47" selection-start-column="68" selection-end-line="47" selection-end-column="68" />
+          <folding>
+            <element signature="e#1574#1575#0" expanded="true" />
+            <element signature="e#1623#1624#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Document.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+        <state relative-caret-position="636">
+          <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="91" selection-start-line="16" selection-start-column="91" selection-end-line="16" selection-end-column="91" />
         </state>
       </provider>
     </entry>
