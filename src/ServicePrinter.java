@@ -1,12 +1,3 @@
-/** **************************************************************
- * File:      ServicePrinter.java (INTERFACE)	
- * Author:    P. Howells	
- * Contents:  6SENG002W CWK  
- *            This provides the interface for the technicians  
- *            to use & service the printer. 
- * Date:      22/10/20
- * Version:   1.0	
- ************************************************************** */
 
 public interface ServicePrinter extends Printer {
 
@@ -25,9 +16,9 @@ public interface ServicePrinter extends Printer {
 
     // Technician methods
 
-    public void replaceTonerCartridge( ) ;
+    public void replaceTonerCartridge(String technician, int replaceAttempt) ;
 
-    public void refillPaper( ) ;
+    public void refillPaper(String technician, int refillAttempt) ;
 
     
 } // ServicePrinter
