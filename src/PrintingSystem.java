@@ -23,6 +23,37 @@ public class PrintingSystem {
         paperTechnician.start();
         tonerTechnician.start();
 
+        try {
+            student1.join();
+            student2.join();
+            student3.join();
+            student4.join();
+            paperTechnician.join();
+            tonerTechnician.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
+        System.out.println("\n----------FINAL STATUS----------\n");
+        System.out.println("STUDENTS\n" +
+                "Student \t Printed Documents List\n"+
+                student1.getName() + "\t\t" + student1.getPrintedBookList() + "\n" +
+                student2.getName() + "\t\t" + student2.getPrintedBookList() + "\n" +
+                student3.getName() + "\t\t" + student3.getPrintedBookList() + "\n" +
+                student4.getName() + "\t\t" + student4.getPrintedBookList() + "\n"
+        );
+        System.out.println("TECHNICIANS\n" +
+                "Technician \t  Total Attempts \t Successful\n"+
+                paperTechnician.getName() + "\t\t\t\t" + ((PaperTechnician) paperTechnician).getTotalAttempts() + "\t\t\t\t  "
+                + ((PaperTechnician) paperTechnician).getSuccessfulRefills() + "\n" +
+                tonerTechnician.getName() + "\t\t\t\t" + ((TonerTechnician) tonerTechnician).getTotalAttempts() + "\t\t\t\t  "
+                + ((TonerTechnician) tonerTechnician).getSuccessfulRefills() + "\n"
+        );
+        System.out.println("PRINTER\n" +
+                "Attribute \t Current Level \t Full Capacity\n"+
+                "Paper Level \t  " + printer.getPaperLevel() + "\t\t\t  " + ServicePrinter.Full_Paper_Tray + "\n" +
+                "Toner Level \t  " + printer.getTonerLevel() + "\t\t\t  " + ServicePrinter.Full_Toner_Level + "\n" +
+                "A total of " + printer.getNoOfPrintedDocs() + " documents were printed."
+        );
     }
 }

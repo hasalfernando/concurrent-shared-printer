@@ -1,5 +1,7 @@
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class Student extends Thread {
@@ -7,6 +9,7 @@ public class Student extends Thread {
     private String name;
     private LaserPrinter printer;
     private ThreadGroup group;
+    private List<String> printedBookList=new ArrayList<String>();
 
     public Student(String name, LaserPrinter printer, ThreadGroup group){
         super(group, name);
@@ -19,29 +22,24 @@ public class Student extends Thread {
     @Override
     public void run() {
 
-        for(int i = 1; i < 6; i++){
-            Document doc = new Document(this.getName(), "Document-"+i, pageNumberGenerator());
+        for(int i = 1; i <= 5; i++){
+            int pageCount = RandomNumberGenerator.randomNumberGenerator(1, 10);
+            Document doc = new Document(this.getName(), "Document-"+i, pageCount);
             System.out.println(this + " is ready to print " + doc.getDocumentName());
             this.printer.printDocument(doc);
-            System.out.println(this + " finished printing "+ doc.getDocumentName() + " with " + doc.getNumberOfPages() +
-                    " pages.");
-
+            this.printedBookList.add(doc.getDocumentName());
             try{
-                sleep((int)Math.random()*1000);
+                int sleepTime = RandomNumberGenerator.randomNumberGenerator(1000, 3000);
+                sleep(sleepTime);
             }
             catch (InterruptedException e){
                 e.printStackTrace();
             }
-
         }
     }
 
-
-    private int pageNumberGenerator(){
-        Random r = new Random();
-        int low = 10;
-        int high = 100;
-        return (r.nextInt(high-low) + low);
+    public List<String> getPrintedBookList(){
+        return printedBookList;
     }
 
     @Override

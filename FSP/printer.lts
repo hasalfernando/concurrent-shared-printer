@@ -1,0 +1,26 @@
+const MAX_PAPERS = 3
+range DOC_RANGE = 0 .. MAX_PAPERS
+
+set PRINTER_ACTIONS = { acquire, print[DOC_RANGE], release, empty }
+set USERS = { st1, st2, t }
+
+
+//PRINTER
+PRINTER(SHEETS = MAX_PAPERS) = PRINTER_READY[SHEETS],
+PRINTER_READY[ doc : DOC_RANGE ] = ( when( doc > 0 ) acquire -> print[DOC_RANGE] -> release -> PRINTER_READY[ doc - 1 ] 
+								   | when( doc == 0 ) empty -> t.acquire -> refill -> release -> PRINTER_READY[MAX_PAPERS] ) .
+
+//STUDENT
+STUDENT(DOCUMENTS = 1) = PRINT[DOCUMENTS], 
+PRINT[document : 0..DOCUMENTS] = ( when( document > 0 ) acquire -> print[DOCUMENTS-document+1] -> release -> PRINT[document-1] 
+						 		 | when( document == 0 ) terminate -> END ) + PRINTER_ACTIONS .
+
+//TECHNICIAN
+TECHNICIAN = ( empty -> acquire -> refill -> release -> TECHNICIAN | terminate -> END ) + PRINTER_ACTIONS .
+
+|| SHARED_PRINTER_SYSTEM = ( st1: STUDENT(3) || st2: STUDENT(2) || t: TECHNICIAN || USERS :: PRINTER(3) ) / { 
+								terminate / { st1.terminate, st2.terminate, t.terminate },
+								t.acquire / { st1.t.acquire, st2.t.acquire, t.t.acquire },
+								t.release / { st1.t.release, st2.t.release, t.t.release },
+								t.refill / { st1.refill, st2.refill }
+							} .

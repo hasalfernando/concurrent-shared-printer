@@ -1,11 +1,7 @@
 
 public interface ServicePrinter extends Printer {
 
-    // from Printer:
-    //    public void printDocument( Document document ) ;
-
-    // Printer constants 
-
+    // Printer constants
     public final int Full_Paper_Tray  = 250 ;
     public final int SheetsPerPack    = 50  ;
 
@@ -15,11 +11,10 @@ public interface ServicePrinter extends Printer {
 
 
     // Technician methods
+    public void replaceTonerCartridge(TonerTechnician technician, int replaceAttempt) ;
 
-    public void replaceTonerCartridge(String technician, int replaceAttempt) ;
-
-    public void refillPaper(String technician, int refillAttempt) ;
+    public void refillPaper(PaperTechnician technician, int refillAttempt) ;
 
     
-} // ServicePrinter
+}
 
