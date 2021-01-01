@@ -4,13 +4,13 @@ import java.time.format.DateTimeFormatter;
 
 public class LaserPrinter implements ServicePrinter {
 
-    private int printerId;
+    private final String printerId;
     private int paperLevel;
     private int tonerLevel;
     private int noOfPrintedDocs;
     private ThreadGroup students;
 
-    public LaserPrinter(int printerId, ThreadGroup students){
+    public LaserPrinter(String printerId, ThreadGroup students){
 
         this.printerId = printerId;
         this.paperLevel = 250;
@@ -24,18 +24,18 @@ public class LaserPrinter implements ServicePrinter {
         logStatus("Pre-Print", this.toString());
         while(this.paperLevel < document.getNumberOfPages() || this.tonerLevel < document.getNumberOfPages()) {
             try {
-                logStatus("Student: "+ document.getUserID() + " is waiting to acquire printer ", this.toString());
+                logStatus("[ Student ] "+ document.getUserID() + " is waiting to acquire printer ", this.toString());
                 wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        logStatus("Printer acquired by student: " + document.getUserID() + " to print " + document.getDocumentName(), this.toString());
+        logStatus("[ Student ] Printer acquired by student: " + document.getUserID() + " to print " + document.getDocumentName(), this.toString());
 
         this.paperLevel = this.paperLevel - document.getNumberOfPages();
         this.tonerLevel = this.tonerLevel - document.getNumberOfPages();
         this.noOfPrintedDocs++;
-        logStatus("Student: " + document.getUserID() + " printed " + document.getDocumentName() +
+        logStatus("[ Student ] " + document.getUserID() + " printed " + document.getDocumentName() +
                 " with " + document.getNumberOfPages() + " pages.", this.toString());
 
         notifyAll();
@@ -134,7 +134,7 @@ public class LaserPrinter implements ServicePrinter {
         return ordinal;
     }
 
-    public int getPrinterId() {
+    public String getPrinterId() {
         return printerId;
     }
 

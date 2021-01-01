@@ -6,7 +6,7 @@ public class PrintingSystem {
         ThreadGroup studentGroup = new ThreadGroup("Students");
         ThreadGroup technicianGroup = new ThreadGroup("Technicians");
 
-        LaserPrinter printer = new LaserPrinter(1, studentGroup);
+        LaserPrinter printer = new LaserPrinter("CANON ImageCLASS LBP-6030", studentGroup);
 
         Student student1 = new Student("John", printer, studentGroup);
         Student student2 = new Student("Elgar", printer, studentGroup);
@@ -49,7 +49,7 @@ public class PrintingSystem {
                 tonerTechnician.getName() + "\t\t\t\t" + ((TonerTechnician) tonerTechnician).getTotalAttempts() + "\t\t\t\t  "
                 + ((TonerTechnician) tonerTechnician).getSuccessfulRefills() + "\n"
         );
-        System.out.println("PRINTER\n" +
+        System.out.println("PRINTER\n" + printer.getPrinterId() +
                 "Attribute \t Current Level \t Full Capacity\n"+
                 "Paper Level \t  " + printer.getPaperLevel() + "\t\t\t  " + ServicePrinter.Full_Paper_Tray + "\n" +
                 "Toner Level \t  " + printer.getTonerLevel() + "\t\t\t  " + ServicePrinter.Full_Toner_Level + "\n" +
