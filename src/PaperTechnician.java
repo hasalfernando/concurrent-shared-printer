@@ -1,3 +1,15 @@
+import utility.RandomNumberGenerator;
+
+/** *********************************************************************
+ * File:      PaperTechnician.java  (Thread)
+ * Author:    Hasal Fernando
+ * Contents:  6SENG002W CWK
+ *            This thread represents the Paper Technician who is responsible of
+ *            refilling papers when the printer runs out of paper.
+ * Date:      20/12/20
+ * Version:   1.0
+ ************************************************************************ */
+
 public class PaperTechnician extends Technician {
 
     public PaperTechnician(String name, ThreadGroup threadGroup, LaserPrinter printer){

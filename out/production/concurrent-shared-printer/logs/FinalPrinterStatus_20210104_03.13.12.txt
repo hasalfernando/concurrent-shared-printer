@@ -1,0 +1,15 @@
+STUDENTS
+Student 	 Printed Documents List
+John		[Document-1, Document-2, Document-3, Document-4, Document-5]
+Elgar		[Document-1, Document-2, Document-3, Document-4, Document-5]
+Quinton		[Document-1, Document-2, Document-3, Document-4, Document-5]
+Ashley		[Document-1, Document-2, Document-3, Document-4, Document-5]
+TECHNICIANS
+Technician 	  Total Attempts 	 Successful
+Brendon				3				  1
+Dale				3				  1
+PRINTER - CANON ImageCLASS LBP-6030
+Attribute 	 Current Level 	 Full Capacity
+Paper Level 	  206			  250
+Toner Level 	  449			  500
+A total of 20 documents were printed.

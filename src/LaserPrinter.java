@@ -1,6 +1,13 @@
-import utility.MultiColorTerminal;
+/** *********************************************************************
+ * File:      LaserPrinter.java  (Monitor Class)
+ * Author:    Hasal Fernando
+ * Contents:  6SENG002W CWK
+ *            This represents the LaserPrinter which is a monitor.
+ * Date:      20/12/20
+ * Version:   1.0
+ ************************************************************************ */
 
-import java.awt.print.Paper;
+import utility.MultiColorTerminal;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -15,7 +22,7 @@ public class LaserPrinter implements ServicePrinter {
     public LaserPrinter(String printerId, ThreadGroup students){
 
         this.printerId = printerId;
-        this.paperLevel = 250;
+        this.paperLevel = ServicePrinter.Full_Paper_Tray;
         this.tonerLevel = 50;
         this.noOfPrintedDocs = 0;
         this.students = students;

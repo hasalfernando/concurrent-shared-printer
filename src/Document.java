@@ -1,11 +1,11 @@
 /** *********************************************************************
  * File:      Document.java  (Class)
- * Author:    P. Howells	
+ * Author:    Hasal Fernando
  * Contents:  6SENG002W CWK  
  *            This provides an "abstract" document object. 
  *            It includes the user id, the document's name & its length 
  *            in pages.
- * Date:      22/10/20
+ * Date:      20/12/20
  * Version:   1.0	
  ************************************************************************ */
 

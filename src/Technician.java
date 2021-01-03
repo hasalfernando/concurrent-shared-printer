@@ -1,3 +1,13 @@
+/** *********************************************************************
+ * File:      Technician.java  (Thread)
+ * Author:    Hasal Fernando
+ * Contents:  6SENG002W CWK
+ *            This is the abstract Technician thread which represents the
+ *            attributes which both types of technicians should have.
+ * Date:      20/11/20
+ * Version:   1.0
+ ************************************************************************ */
+
 public abstract class Technician extends Thread {
 
     protected LaserPrinter printer;

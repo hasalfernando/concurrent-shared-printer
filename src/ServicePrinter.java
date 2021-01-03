@@ -1,3 +1,12 @@
+/** **************************************************************
+ * File:      ServicePrinter.java (INTERFACE)
+ * Author:    Hasal Fernando
+ * Contents:  6SENG002W CWK
+ *            This provides the interface for the technicians
+ *            to use & service the printer.
+ * Date:      20/12/20
+ * Version:   1.0
+ ************************************************************** */
 
 public interface ServicePrinter extends Printer {
 

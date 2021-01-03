@@ -1,3 +1,13 @@
+/** *********************************************************************
+ * File:      MultiColorTerminal.java  (Class)
+ * Author:    Hasal Fernando
+ * Contents:  6SENG002W CWK
+ *            This represents the utility that is used to print colored
+ *            outputs in the console.
+ * Date:      20/12/20
+ * Version:   1.0
+ ************************************************************************ */
+
 package utility;
 
 public class MultiColorTerminal {

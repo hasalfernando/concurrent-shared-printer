@@ -1,4 +1,14 @@
+/** *********************************************************************
+ * File:      Student.java  (Thread)
+ * Author:    Hasal Fernando
+ * Contents:  6SENG002W CWK
+ *            This represents the Student thread.
+ * Date:      20/12/20
+ * Version:   1.0
+ ************************************************************************ */
+
 import utility.MultiColorTerminal;
+import utility.RandomNumberGenerator;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -24,7 +34,9 @@ public class Student extends Thread {
     public void run() {
 
         for(int i = 1; i <= 5; i++){
-            int pageCount = RandomNumberGenerator.randomNumberGenerator(1, 10);
+            int minPageCount = 1;
+            int maxPageCount = 10;
+            int pageCount = RandomNumberGenerator.randomNumberGenerator(minPageCount, maxPageCount);
             Document doc = new Document(this.getName(), "Document-"+i, pageCount);
             System.out.println(MultiColorTerminal.GREEN + this + " is ready to print " + doc.getDocumentName() +
                     MultiColorTerminal.RESET);
