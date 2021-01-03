@@ -1,3 +1,5 @@
+import utility.MultiColorTerminal;
+
 import java.awt.print.Paper;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -21,22 +23,23 @@ public class LaserPrinter implements ServicePrinter {
 
 
     public synchronized void printDocument(Document document){
-        logStatus("Pre-Print", this.toString());
         while(this.paperLevel < document.getNumberOfPages() || this.tonerLevel < document.getNumberOfPages()) {
             try {
-                logStatus("[ Student ] "+ document.getUserID() + " is waiting to acquire printer ", this.toString());
+                logStatus("[ STUDENT ] \t\t\t- "+ document.getUserID() + " is waiting to acquire printer ",
+                        this.toString(), MultiColorTerminal.GREEN);
                 wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        logStatus("[ Student ] Printer acquired by student: " + document.getUserID() + " to print " + document.getDocumentName(), this.toString());
+        logStatus("[ STUDENT ] \t\t\t- " + document.getUserID() + " acquired printer to print " +
+                document.getDocumentName(), this.toString(), MultiColorTerminal.GREEN);
 
         this.paperLevel = this.paperLevel - document.getNumberOfPages();
         this.tonerLevel = this.tonerLevel - document.getNumberOfPages();
         this.noOfPrintedDocs++;
-        logStatus("[ Student ] " + document.getUserID() + " printed " + document.getDocumentName() +
-                " with " + document.getNumberOfPages() + " pages.", this.toString());
+        logStatus("[ STUDENT ] \t\t\t- " + document.getUserID() + " printed " + document.getDocumentName() +
+                " with " + document.getNumberOfPages() + " pages.", this.toString(), MultiColorTerminal.GREEN_BOLD);
 
         notifyAll();
 
@@ -47,11 +50,14 @@ public class LaserPrinter implements ServicePrinter {
         while(this.tonerLevel >= ServicePrinter.Minimum_Toner_Level) {
             try {
                 if (hasOperativeStudents()) {
-                    logStatus("Toner Technician: " + technician.getName() + " waiting to refill toner cartridge for the " +
-                            replaceAttempt + getOrdinal(replaceAttempt)+ " time.", this.toString());
+                    logStatus("[ TONER TECHNICIAN ] \t- " + technician.getName() + " waiting to refill toner " +
+                            "cartridge for the " + replaceAttempt + getOrdinal(replaceAttempt)+ " time.", this.toString(),
+                            MultiColorTerminal.BLUE);
                     wait(5000);
                 } else {
-                    logStatus("No active students. Aborting toner cartridge refill operation.", this.toString());
+                    logStatus("[ TONER TECHNICIAN ] \t- No active students. Aborting toner cartridge refill " +
+                            "operation.", this.toString(),
+                            MultiColorTerminal.BLUE);
                     break;
                 }
             } catch (InterruptedException e) {
@@ -60,12 +66,14 @@ public class LaserPrinter implements ServicePrinter {
         }
 
         if(this.tonerLevel < ServicePrinter.Minimum_Toner_Level) {
-            logStatus("Printer acquired by Toner Technician: " + technician.getName() + " to refill toner cartridge for the " +
-                    replaceAttempt + getOrdinal(replaceAttempt) + " time.", this.toString());
+            logStatus("[ TONER TECHNICIAN ] \t- Printer acquired by Toner Technician: " + technician.getName() +
+                    " to refill toner cartridge for the " +
+                    replaceAttempt + getOrdinal(replaceAttempt) + " time.", this.toString(), MultiColorTerminal.BLUE);
             this.tonerLevel = ServicePrinter.Full_Toner_Level;
             int successesRefills = technician.getSuccessfulRefills() + 1;
             technician.setSuccessfulRefills(successesRefills);
-            logStatus("Printer toner cartridge refill complete. Toner level increased to "+ this.tonerLevel + ".", this.toString());
+            logStatus("[ TONER TECHNICIAN ] \t- Printer toner cartridge refill complete. Toner level increased to "+
+                    this.tonerLevel + ".", this.toString(), MultiColorTerminal.BLUE_BOLD);
         }
 
         notifyAll();
@@ -76,11 +84,12 @@ public class LaserPrinter implements ServicePrinter {
         while((this.paperLevel+ServicePrinter.SheetsPerPack) > ServicePrinter.Full_Paper_Tray) {
             try {
                 if (hasOperativeStudents()) {
-                    logStatus("Paper Technician: " + technician.getName() + " waiting to refill paper for the " +
-                            refillAttempt + getOrdinal(refillAttempt) + " time.", this.toString());
+                    logStatus("[ PAPER TECHNICIAN ] \t- " + technician.getName() + " waiting to refill paper for the " +
+                            refillAttempt + getOrdinal(refillAttempt) + " time.", this.toString(), MultiColorTerminal.PURPLE);
                     wait(5000);
                 } else {
-                    logStatus("No active students. Aborting paper refill operation.", this.toString());
+                    logStatus("[ PAPER TECHNICIAN ] \t- No active students. Aborting paper refill operation.",
+                            this.toString(), MultiColorTerminal.PURPLE);
                     break;
                 }
             } catch (InterruptedException e) {
@@ -88,12 +97,13 @@ public class LaserPrinter implements ServicePrinter {
             }
         }
         if((this.paperLevel+ServicePrinter.SheetsPerPack) <= ServicePrinter.Full_Paper_Tray) {
-            logStatus("Printer acquired by Paper Technician: " + technician.getName() + " to refill paper for the " +
-                    refillAttempt + getOrdinal(refillAttempt) + " time.", this.toString());
+            logStatus("[ PAPER TECHNICIAN ] \t- Printer acquired by Paper Technician: " + technician.getName() + " to refill paper for the " +
+                    refillAttempt + getOrdinal(refillAttempt) + " time.", this.toString(), MultiColorTerminal.PURPLE);
             this.paperLevel = this.paperLevel + ServicePrinter.SheetsPerPack;
             int successesRefills = technician.getSuccessfulRefills() + 1;
             technician.setSuccessfulRefills(successesRefills);
-            logStatus("Printer paper refill complete. Paper level increased to "+ this.paperLevel + ".", this.toString());
+            logStatus("[ PAPER TECHNICIAN ] \t- Printer paper refill complete. Paper level increased to "+ this.paperLevel + ".",
+                    this.toString(), MultiColorTerminal.PURPLE_BOLD);
         }
 
         notifyAll();
@@ -106,11 +116,12 @@ public class LaserPrinter implements ServicePrinter {
                 + " | Documents Printed: " + this.noOfPrintedDocs + " ]");
     }
 
-    private void logStatus(String timeLineEvent, String status){
+    private void logStatus(String timeLineEvent, String status, String printColor){
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
 
-        System.out.println(dtf.format(now)+ " - " + timeLineEvent + "\n- " + status);
+        System.out.println(printColor + dtf.format(now)+ " - " + timeLineEvent + " - " + status +
+                MultiColorTerminal.RESET);
     }
 
     private boolean hasOperativeStudents(){

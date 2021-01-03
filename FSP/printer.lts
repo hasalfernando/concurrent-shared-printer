@@ -3,28 +3,28 @@ const MAX_PAPERS = 3
 const MIN_DOCS = 1
 const MAX_DOCS = 3
 range PAPER_RANGE = MIN_PAPERS..MAX_PAPERS
-range DOC_RANGE = MIN_DOCS..MAX_DOCS
+range PRINTABLE_PAPER_RANGE = MIN_DOCS..MAX_DOCS
 
-set PRINTER_ACTIONS = { acquire, print[DOC_RANGE], release, emptyAlert, printerCheck }
+set PRINTER_ACTIONS = { acquire, print[PRINTABLE_PAPER_RANGE], release, emptyAlert, printerCheck.acquire, notEmpty }
 set USERS = { st1, st2, t }
 
 //PRINTER
 PRINTER(SHEETS = MAX_PAPERS) = PRINTER_READY[SHEETS],
-PRINTER_READY[ paper : PAPER_RANGE ] = ( when( paper > 0 ) acquire -> print[DOC_RANGE] -> release -> PRINTER_READY[ paper - 1 ] 
+PRINTER_READY[ paper : PAPER_RANGE ] = ( when( paper > 0 ) acquire -> print[paper] -> release -> PRINTER_READY[ paper - 1 ] 
 								   | when( paper == 0 ) emptyAlert -> t.acquire -> refill -> release -> PRINTER_READY[MAX_PAPERS] 
-								   | printerCheck -> PRINTER_READY[ paper ] ) .
-/*
+								   | when( paper > 0 ) printerCheck.acquire -> notEmpty -> PRINTER_READY[ paper ] ) .
+
 //STUDENT
 STUDENT(DOCUMENTS = 1) = PRINT[DOCUMENTS], 
-PRINT[document : 0..DOCUMENTS] = ( when( document > 0 ) acquire -> print[DOCUMENTS-document+1] -> release -> PRINT[document-1] 
+PRINT[document : PAPER_RANGE] = ( when( document > 0 ) acquire -> print[PRINTABLE_PAPER_RANGE] -> release -> PRINT[document-1] 
 						 		 | when( document == 0 ) terminate -> END ) + PRINTER_ACTIONS .
 
 //TECHNICIAN
-TECHNICIAN = ( emptyAlert -> t.acquire -> refill -> release -> TECHNICIAN | printerCheck -> TECHNICIAN ) + PRINTER_ACTIONS .
+TECHNICIAN = ( emptyAlert -> t.acquire -> refill -> release -> TECHNICIAN 
+			| printerCheck.acquire -> notEmpty -> TECHNICIAN ) + PRINTER_ACTIONS .
 
 //SHARED PRINTER COMPOSITE PROCESS
-|| SHARED_PRINTER_SYSTEM = ( st1: STUDENT(3) || st2: STUDENT(2) || t: TECHNICIAN || USERS :: PRINTER ) / {						
-								t.acquire / { st1.t.acquire, st2.t.acquire, t.t.acquire },
-								t.refill / { st1.refill, st2.refill }
+|| SHARED_PRINTER_SYSTEM = ( st1: STUDENT(3) || st2: STUDENT(2) || t: TECHNICIAN || USERS :: PRINTER ) / {	
+								t.acquire / { st1.t.acquire, st2.t.acquire, t.t.acquire },	
+								t.refill / { st1.refill, st2.refill } 
 							} .
-*/
