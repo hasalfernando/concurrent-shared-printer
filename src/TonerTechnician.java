@@ -22,7 +22,9 @@ public class TonerTechnician extends Technician {
             try{
                 this.printer.replaceTonerCartridge(this, i);
                 this.totalAttempts+=1;
-                int sleepTime = RandomNumberGenerator.randomNumberGenerator(1000, 3000);
+                int minSleepTime = 1000;
+                int maxSleepTime = 3000;
+                int sleepTime = RandomNumberGenerator.randomNumberGenerator(minSleepTime, maxSleepTime);
                 sleep(sleepTime);
             }
             catch (InterruptedException e){
