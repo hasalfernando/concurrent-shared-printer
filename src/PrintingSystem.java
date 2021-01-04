@@ -27,7 +27,7 @@ public class PrintingSystem {
         //Laser printer monitor creation.
         LaserPrinter printer = new LaserPrinter("CANON ImageCLASS LBP-6030", studentGroup);
 
-        //Student threads creation
+        //Student threads creation.
         Student student1 = new Student("John", printer, studentGroup);
         Student student2 = new Student("Elgar", printer, studentGroup);
         Student student3 = new Student("Quinton", printer, studentGroup);
@@ -44,7 +44,7 @@ public class PrintingSystem {
         Technician paperTechnician = new PaperTechnician("Brendon", technicianGroup, printer);
         Technician tonerTechnician = new TonerTechnician("Dale", technicianGroup, printer);
 
-        //Starting all threads
+        //Starting all threads.
         student1.start();
         student2.start();
         student3.start();
@@ -67,14 +67,14 @@ public class PrintingSystem {
         //Printing the final status of the system.
         System.out.println("\n----------FINAL STATUS----------\n");
 
-        //Variables used to print student status
+        //Variables used to print student status.
         String studentStatus = "STUDENTS\n" + "Student \t Printed Documents List\n";
         for(int i = 0; i < studentList.size(); i++){
             studentStatus = (studentStatus.concat(studentList.get(i).getName() + "\t\t" +
                     studentList.get(i).getPrintedBookList()+"\n"));
         }
 
-        //Variables used to print technician status
+        //Variables used to print technician status.
         String technicianStatusInitializer = "TECHNICIANS\nTechnician \t  Total Attempts \t Successful\n";
         String paperTechnicianStatus = (paperTechnician.getName() + "\t\t\t\t" +
                 ((PaperTechnician) paperTechnician).getTotalAttempts() + "\t\t\t\t  "
@@ -84,7 +84,7 @@ public class PrintingSystem {
                 ((TonerTechnician) tonerTechnician).getTotalAttempts() + "\t\t\t\t  "
                 + ((TonerTechnician) tonerTechnician).getSuccessfulRefills() + "\n");
 
-        //Variables used to print printer status
+        //Variables used to print printer status.
         String printerStatusInitializer = "PRINTER - " + printer.getPrinterId() + "\n" +
                 "Attribute \t Current Level \t Full Capacity\n";
         String printerStatus =

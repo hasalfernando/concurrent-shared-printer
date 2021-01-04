@@ -10,7 +10,7 @@
 
 public interface ServicePrinter extends Printer {
 
-    // Printer constants
+    // Printer constants.
     public final int Full_Paper_Tray  = 250 ;
     public final int SheetsPerPack    = 50  ;
 
@@ -19,7 +19,7 @@ public interface ServicePrinter extends Printer {
     public final int PagesPerTonerCartridge  = 500 ;
 
 
-    // Technician methods
+    // Technician methods.
     public void replaceTonerCartridge(TonerTechnician technician, int replaceAttempt) ;
 
     public void refillPaper(PaperTechnician technician, int refillAttempt) ;

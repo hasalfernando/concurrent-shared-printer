@@ -14,6 +14,7 @@ import java.util.Random;
 
 public final class RandomNumberGenerator {
 
+    //Generates a random number, given the lowest and highest possible integers.
     public static synchronized int randomNumberGenerator(int low, int high){
         Random r = new Random();
         return (r.nextInt(high-low) + low);

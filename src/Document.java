@@ -11,6 +11,7 @@
 
 class Document {
 
+    //A document's attributes
     private final String userID ;  
     private final String documentName ;  
     private final int    numberOfPages ;

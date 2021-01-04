@@ -1,3 +1,13 @@
+/** *********************************************************************
+ * File:      WriteStatusFile.java  (Class)
+ * Author:    Hasal Fernando
+ * Contents:  6SENG002W CWK
+ *            This is the utility class which is used to write the final
+ *            status of the printer based on the user's choice.
+ * Date:      20/12/20
+ * Version:   1.0
+ ************************************************************************ */
+
 package utility;
 
 import java.io.IOException;
@@ -7,6 +17,7 @@ import java.time.format.DateTimeFormatter;
 
 public class WriteStatusFile {
 
+    //Writes final status after printing, to a file with appended date and time to its name.
     public static void writeToFile(String status){
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMdd_HH.mm.ss");
         LocalDateTime now = LocalDateTime.now();

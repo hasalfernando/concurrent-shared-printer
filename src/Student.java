@@ -9,7 +9,6 @@
 
 import utility.MultiColorTerminal;
 import utility.RandomNumberGenerator;
-
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -17,11 +16,13 @@ import java.util.List;
 
 public class Student extends Thread {
 
+    //A student's attributes.
     private String name;
     private LaserPrinter printer;
     private ThreadGroup group;
     private List<String> printedBookList=new ArrayList<String>();
 
+    //Student constructor.
     public Student(String name, LaserPrinter printer, ThreadGroup group){
         super(group, name);
         this.name = name;
@@ -30,23 +31,30 @@ public class Student extends Thread {
 
     }
 
+    //Student thread's run method.
     @Override
     public void run() {
 
         for(int i = 1; i <= 5; i++){
+            //Generate a random number of pages between one and ten to the documents owned by a student.
             int minPageCount = 1;
             int maxPageCount = 10;
             int pageCount = RandomNumberGenerator.randomNumberGenerator(minPageCount, maxPageCount);
+            //Document creation.
             Document doc = new Document(this.getName(), "Document-"+i, pageCount);
             System.out.println(MultiColorTerminal.GREEN + this + " is ready to print " + doc.getDocumentName() +
                     MultiColorTerminal.RESET);
             this.printer.printDocument(doc);
+            //Add book to student's printed book list.
             this.printedBookList.add(doc.getDocumentName());
             try{
-                int sleepTime = RandomNumberGenerator.randomNumberGenerator(1000, 3000);
+                //Sleep for a random amount of time after printing a document.
+                int lowestSleepTime = 1000;
+                int maximumSleepTime = 3000;
+                int sleepTime = RandomNumberGenerator.randomNumberGenerator(lowestSleepTime, maximumSleepTime);
                 sleep(sleepTime);
             }
-            catch (InterruptedException e){
+            catch (InterruptedException e){ //Catch any interruptions to the thread.
                 e.printStackTrace();
             }
         }

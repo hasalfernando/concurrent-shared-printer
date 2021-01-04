@@ -12,6 +12,7 @@ import utility.RandomNumberGenerator;
 
 public class TonerTechnician extends Technician {
 
+    //Constructor for Toner Technician.
     public TonerTechnician(String name, ThreadGroup threadGroup, LaserPrinter printer) {
         super(name, threadGroup, printer);
     }
@@ -28,18 +29,21 @@ public class TonerTechnician extends Technician {
         return this.totalAttempts;
     }
 
+    //Toner technician's run method.
     @Override
     public void run(){
+        //Attempting three times to refill toner.
         for(int i = 1; i <= 3; i++){
             try{
                 this.printer.replaceTonerCartridge(this, i);
                 this.totalAttempts+=1;
+                //Sleep for a random amount of time after each attempt.
                 int minSleepTime = 1000;
                 int maxSleepTime = 3000;
                 int sleepTime = RandomNumberGenerator.randomNumberGenerator(minSleepTime, maxSleepTime);
                 sleep(sleepTime);
             }
-            catch (InterruptedException e){
+            catch (InterruptedException e){ //Catch any interruptions to the thread.
                 e.printStackTrace();
             }
         }
