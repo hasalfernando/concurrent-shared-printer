@@ -1,0 +1,205 @@
+2021/01/04 12:01:59 - [ STUDENT ] 			- Ashley is ready to print Document-1
+2021/01/04 12:01:59 - [ PAPER TECHNICIAN ] 	- Brendon waiting to refill paper for the 1st time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 250 | Toner Level: 50 | Documents Printed: 0 ]
+2021/01/04 12:01:59 - [ STUDENT ] 			- Elgar is ready to print Document-1
+2021/01/04 12:01:59 - [ STUDENT ] 			- Quinton is ready to print Document-1
+2021/01/04 12:01:59 - [ STUDENT ] 			- John is ready to print Document-1
+2021/01/04 12:01:59 - [ STUDENT ] 			- Ashley acquired printer to print Document-1
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 250 | Toner Level: 50 | Documents Printed: 0 ]
+2021/01/04 12:01:59 - [ STUDENT ] 			- Ashley printed Document-1 with 8 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 242 | Toner Level: 42 | Documents Printed: 1 ]
+2021/01/04 12:01:59 - [ TONER TECHNICIAN ] 	- Dale waiting to refill toner cartridge for the 1st time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 242 | Toner Level: 42 | Documents Printed: 1 ]
+2021/01/04 12:01:59 - [ PAPER TECHNICIAN ] 	- Brendon waiting to refill paper for the 1st time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 242 | Toner Level: 42 | Documents Printed: 1 ]
+2021/01/04 12:01:59 - [ STUDENT ] 			- John acquired printer to print Document-1
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 242 | Toner Level: 42 | Documents Printed: 1 ]
+2021/01/04 12:01:59 - [ STUDENT ] 			- John printed Document-1 with 4 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 238 | Toner Level: 38 | Documents Printed: 2 ]
+2021/01/04 12:01:59 - [ STUDENT ] 			- Quinton acquired printer to print Document-1
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 238 | Toner Level: 38 | Documents Printed: 2 ]
+2021/01/04 12:01:59 - [ STUDENT ] 			- Quinton printed Document-1 with 1 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 237 | Toner Level: 37 | Documents Printed: 3 ]
+2021/01/04 12:01:59 - [ STUDENT ] 			- Elgar acquired printer to print Document-1
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 237 | Toner Level: 37 | Documents Printed: 3 ]
+2021/01/04 12:01:59 - [ STUDENT ] 			- Elgar printed Document-1 with 8 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 229 | Toner Level: 29 | Documents Printed: 4 ]
+2021/01/04 12:01:59 - [ PAPER TECHNICIAN ] 	- Brendon waiting to refill paper for the 1st time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 229 | Toner Level: 29 | Documents Printed: 4 ]
+2021/01/04 12:01:59 - [ TONER TECHNICIAN ] 	- Dale waiting to refill toner cartridge for the 1st time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 229 | Toner Level: 29 | Documents Printed: 4 ]
+2021/01/04 12:02:00 - [ STUDENT ] 			- Elgar is ready to print Document-2
+2021/01/04 12:02:00 - [ STUDENT ] 			- Elgar acquired printer to print Document-2
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 229 | Toner Level: 29 | Documents Printed: 4 ]
+2021/01/04 12:02:00 - [ STUDENT ] 			- Elgar printed Document-2 with 4 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 225 | Toner Level: 25 | Documents Printed: 5 ]
+2021/01/04 12:02:00 - [ TONER TECHNICIAN ] 	- Dale waiting to refill toner cartridge for the 1st time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 225 | Toner Level: 25 | Documents Printed: 5 ]
+2021/01/04 12:02:00 - [ PAPER TECHNICIAN ] 	- Brendon waiting to refill paper for the 1st time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 225 | Toner Level: 25 | Documents Printed: 5 ]
+2021/01/04 12:02:01 - [ STUDENT ] 			- Ashley is ready to print Document-2
+2021/01/04 12:02:01 - [ STUDENT ] 			- Ashley acquired printer to print Document-2
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 225 | Toner Level: 25 | Documents Printed: 5 ]
+2021/01/04 12:02:01 - [ STUDENT ] 			- Ashley printed Document-2 with 2 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 223 | Toner Level: 23 | Documents Printed: 6 ]
+2021/01/04 12:02:01 - [ PAPER TECHNICIAN ] 	- Brendon waiting to refill paper for the 1st time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 223 | Toner Level: 23 | Documents Printed: 6 ]
+2021/01/04 12:02:01 - [ TONER TECHNICIAN ] 	- Dale waiting to refill toner cartridge for the 1st time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 223 | Toner Level: 23 | Documents Printed: 6 ]
+2021/01/04 12:02:01 - [ STUDENT ] 			- Quinton is ready to print Document-2
+2021/01/04 12:02:01 - [ STUDENT ] 			- Quinton acquired printer to print Document-2
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 223 | Toner Level: 23 | Documents Printed: 6 ]
+2021/01/04 12:02:01 - [ STUDENT ] 			- Quinton printed Document-2 with 9 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 214 | Toner Level: 14 | Documents Printed: 7 ]
+2021/01/04 12:02:01 - [ TONER TECHNICIAN ] 	- Dale waiting to refill toner cartridge for the 1st time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 214 | Toner Level: 14 | Documents Printed: 7 ]
+2021/01/04 12:02:01 - [ PAPER TECHNICIAN ] 	- Brendon waiting to refill paper for the 1st time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 214 | Toner Level: 14 | Documents Printed: 7 ]
+2021/01/04 12:02:02 - [ STUDENT ] 			- John is ready to print Document-2
+2021/01/04 12:02:02 - [ STUDENT ] 			- John acquired printer to print Document-2
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 214 | Toner Level: 14 | Documents Printed: 7 ]
+2021/01/04 12:02:02 - [ STUDENT ] 			- John printed Document-2 with 3 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 211 | Toner Level: 11 | Documents Printed: 8 ]
+2021/01/04 12:02:02 - [ PAPER TECHNICIAN ] 	- Brendon waiting to refill paper for the 1st time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 211 | Toner Level: 11 | Documents Printed: 8 ]
+2021/01/04 12:02:02 - [ TONER TECHNICIAN ] 	- Dale waiting to refill toner cartridge for the 1st time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 211 | Toner Level: 11 | Documents Printed: 8 ]
+2021/01/04 12:02:03 - [ STUDENT ] 			- Elgar is ready to print Document-3
+2021/01/04 12:02:03 - [ STUDENT ] 			- Elgar acquired printer to print Document-3
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 211 | Toner Level: 11 | Documents Printed: 8 ]
+2021/01/04 12:02:03 - [ STUDENT ] 			- Elgar printed Document-3 with 8 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 203 | Toner Level: 3 | Documents Printed: 9 ]
+2021/01/04 12:02:03 - [ TONER TECHNICIAN ] 	- Printer acquired by Toner Technician: Dale to refill toner cartridge for the 1st time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 203 | Toner Level: 3 | Documents Printed: 9 ]
+2021/01/04 12:02:03 - [ TONER TECHNICIAN ] 	- Printer toner cartridge refill complete. Toner level increased to 500.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 203 | Toner Level: 500 | Documents Printed: 9 ]
+2021/01/04 12:02:03 - [ PAPER TECHNICIAN ] 	- Brendon waiting to refill paper for the 1st time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 203 | Toner Level: 500 | Documents Printed: 9 ]
+2021/01/04 12:02:03 - [ STUDENT ] 			- Quinton is ready to print Document-3
+2021/01/04 12:02:03 - [ STUDENT ] 			- Quinton acquired printer to print Document-3
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 203 | Toner Level: 500 | Documents Printed: 9 ]
+2021/01/04 12:02:03 - [ STUDENT ] 			- Quinton printed Document-3 with 1 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 202 | Toner Level: 499 | Documents Printed: 10 ]
+2021/01/04 12:02:03 - [ PAPER TECHNICIAN ] 	- Brendon waiting to refill paper for the 1st time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 202 | Toner Level: 499 | Documents Printed: 10 ]
+2021/01/04 12:02:03 - [ STUDENT ] 			- Ashley is ready to print Document-3
+2021/01/04 12:02:03 - [ STUDENT ] 			- Ashley acquired printer to print Document-3
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 202 | Toner Level: 499 | Documents Printed: 10 ]
+2021/01/04 12:02:03 - [ STUDENT ] 			- Ashley printed Document-3 with 5 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 197 | Toner Level: 494 | Documents Printed: 11 ]
+2021/01/04 12:02:03 - [ PAPER TECHNICIAN ] 	- Printer acquired by Paper Technician: Brendon to refill paper for the 1st time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 197 | Toner Level: 494 | Documents Printed: 11 ]
+2021/01/04 12:02:03 - [ PAPER TECHNICIAN ] 	- Printer paper refill complete. Paper level increased to 247.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 247 | Toner Level: 494 | Documents Printed: 11 ]
+2021/01/04 12:02:04 - [ STUDENT ] 			- John is ready to print Document-3
+2021/01/04 12:02:04 - [ STUDENT ] 			- John acquired printer to print Document-3
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 247 | Toner Level: 494 | Documents Printed: 11 ]
+2021/01/04 12:02:04 - [ STUDENT ] 			- John printed Document-3 with 6 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 241 | Toner Level: 488 | Documents Printed: 12 ]
+2021/01/04 12:02:05 - [ TONER TECHNICIAN ] 	- Dale waiting to refill toner cartridge for the 2nd time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 241 | Toner Level: 488 | Documents Printed: 12 ]
+2021/01/04 12:02:05 - [ STUDENT ] 			- Elgar is ready to print Document-4
+2021/01/04 12:02:05 - [ STUDENT ] 			- Elgar acquired printer to print Document-4
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 241 | Toner Level: 488 | Documents Printed: 12 ]
+2021/01/04 12:02:05 - [ STUDENT ] 			- Elgar printed Document-4 with 8 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 233 | Toner Level: 480 | Documents Printed: 13 ]
+2021/01/04 12:02:05 - [ TONER TECHNICIAN ] 	- Dale waiting to refill toner cartridge for the 2nd time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 233 | Toner Level: 480 | Documents Printed: 13 ]
+2021/01/04 12:02:06 - [ STUDENT ] 			- Ashley is ready to print Document-4
+2021/01/04 12:02:06 - [ STUDENT ] 			- Ashley acquired printer to print Document-4
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 233 | Toner Level: 480 | Documents Printed: 13 ]
+2021/01/04 12:02:06 - [ STUDENT ] 			- Ashley printed Document-4 with 4 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 229 | Toner Level: 476 | Documents Printed: 14 ]
+2021/01/04 12:02:06 - [ TONER TECHNICIAN ] 	- Dale waiting to refill toner cartridge for the 2nd time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 229 | Toner Level: 476 | Documents Printed: 14 ]
+2021/01/04 12:02:06 - [ STUDENT ] 			- Quinton is ready to print Document-4
+2021/01/04 12:02:06 - [ STUDENT ] 			- Quinton acquired printer to print Document-4
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 229 | Toner Level: 476 | Documents Printed: 14 ]
+2021/01/04 12:02:06 - [ STUDENT ] 			- Quinton printed Document-4 with 8 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 221 | Toner Level: 468 | Documents Printed: 15 ]
+2021/01/04 12:02:06 - [ TONER TECHNICIAN ] 	- Dale waiting to refill toner cartridge for the 2nd time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 221 | Toner Level: 468 | Documents Printed: 15 ]
+2021/01/04 12:02:06 - [ PAPER TECHNICIAN ] 	- Brendon waiting to refill paper for the 2nd time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 221 | Toner Level: 468 | Documents Printed: 15 ]
+2021/01/04 12:02:07 - [ STUDENT ] 			- Elgar is ready to print Document-5
+2021/01/04 12:02:07 - [ STUDENT ] 			- Elgar acquired printer to print Document-5
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 221 | Toner Level: 468 | Documents Printed: 15 ]
+2021/01/04 12:02:07 - [ STUDENT ] 			- Elgar printed Document-5 with 8 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 213 | Toner Level: 460 | Documents Printed: 16 ]
+2021/01/04 12:02:07 - [ PAPER TECHNICIAN ] 	- Brendon waiting to refill paper for the 2nd time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 213 | Toner Level: 460 | Documents Printed: 16 ]
+2021/01/04 12:02:07 - [ TONER TECHNICIAN ] 	- Dale waiting to refill toner cartridge for the 2nd time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 213 | Toner Level: 460 | Documents Printed: 16 ]
+2021/01/04 12:02:07 - [ STUDENT ] 			- John is ready to print Document-4
+2021/01/04 12:02:07 - [ STUDENT ] 			- John acquired printer to print Document-4
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 213 | Toner Level: 460 | Documents Printed: 16 ]
+2021/01/04 12:02:07 - [ STUDENT ] 			- John printed Document-4 with 9 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 204 | Toner Level: 451 | Documents Printed: 17 ]
+2021/01/04 12:02:07 - [ TONER TECHNICIAN ] 	- Dale waiting to refill toner cartridge for the 2nd time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 204 | Toner Level: 451 | Documents Printed: 17 ]
+2021/01/04 12:02:07 - [ PAPER TECHNICIAN ] 	- Brendon waiting to refill paper for the 2nd time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 204 | Toner Level: 451 | Documents Printed: 17 ]
+2021/01/04 12:02:07 - [ STUDENT ] 			- Quinton is ready to print Document-5
+2021/01/04 12:02:07 - [ STUDENT ] 			- Quinton acquired printer to print Document-5
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 204 | Toner Level: 451 | Documents Printed: 17 ]
+2021/01/04 12:02:07 - [ STUDENT ] 			- Quinton printed Document-5 with 5 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 199 | Toner Level: 446 | Documents Printed: 18 ]
+2021/01/04 12:02:07 - [ PAPER TECHNICIAN ] 	- Printer acquired by Paper Technician: Brendon to refill paper for the 2nd time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 199 | Toner Level: 446 | Documents Printed: 18 ]
+2021/01/04 12:02:07 - [ PAPER TECHNICIAN ] 	- Printer paper refill complete. Paper level increased to 249.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 249 | Toner Level: 446 | Documents Printed: 18 ]
+2021/01/04 12:02:07 - [ TONER TECHNICIAN ] 	- Dale waiting to refill toner cartridge for the 2nd time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 249 | Toner Level: 446 | Documents Printed: 18 ]
+2021/01/04 12:02:08 - [ STUDENT ] 			- Ashley is ready to print Document-5
+2021/01/04 12:02:08 - [ STUDENT ] 			- Ashley acquired printer to print Document-5
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 249 | Toner Level: 446 | Documents Printed: 18 ]
+2021/01/04 12:02:08 - [ STUDENT ] 			- Ashley printed Document-5 with 1 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 248 | Toner Level: 445 | Documents Printed: 19 ]
+2021/01/04 12:02:08 - [ TONER TECHNICIAN ] 	- Dale waiting to refill toner cartridge for the 2nd time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 248 | Toner Level: 445 | Documents Printed: 19 ]
+2021/01/04 12:02:09 - [ PAPER TECHNICIAN ] 	- Brendon waiting to refill paper for the 3rd time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 248 | Toner Level: 445 | Documents Printed: 19 ]
+2021/01/04 12:02:10 - [ STUDENT ] 			- John is ready to print Document-5
+2021/01/04 12:02:10 - [ STUDENT ] 			- John acquired printer to print Document-5
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 248 | Toner Level: 445 | Documents Printed: 19 ]
+2021/01/04 12:02:10 - [ STUDENT ] 			- John printed Document-5 with 2 pages.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 246 | Toner Level: 443 | Documents Printed: 20 ]
+2021/01/04 12:02:10 - [ PAPER TECHNICIAN ] 	- Brendon waiting to refill paper for the 3rd time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 246 | Toner Level: 443 | Documents Printed: 20 ]
+2021/01/04 12:02:10 - [ TONER TECHNICIAN ] 	- Dale waiting to refill toner cartridge for the 2nd time.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 246 | Toner Level: 443 | Documents Printed: 20 ]
+2021/01/04 12:02:15 - [ TONER TECHNICIAN ] 	- No active students. Aborting toner cartridge refill operation.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 246 | Toner Level: 443 | Documents Printed: 20 ]
+2021/01/04 12:02:15 - [ PAPER TECHNICIAN ] 	- No active students. Aborting paper refill operation.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 246 | Toner Level: 443 | Documents Printed: 20 ]
+2021/01/04 12:02:17 - [ TONER TECHNICIAN ] 	- No active students. Aborting toner cartridge refill operation.
+- [ PrinterID: CANON ImageCLASS LBP-6030 | Paper Level: 246 | Toner Level: 443 | Documents Printed: 20 ]
+
+----------FINAL STATUS----------
+
+STUDENTS
+Student 	 Printed Documents List
+John		[Document-1, Document-2, Document-3, Document-4, Document-5]
+Elgar		[Document-1, Document-2, Document-3, Document-4, Document-5]
+Quinton		[Document-1, Document-2, Document-3, Document-4, Document-5]
+Ashley		[Document-1, Document-2, Document-3, Document-4, Document-5]
+
+TECHNICIANS
+Technician 	  Total Attempts 	 Successful
+Brendon				3				  2
+Dale				3				  1
+
+PRINTER - CANON ImageCLASS LBP-6030
+Attribute 	 Current Level 	 Full Capacity
+Paper Level 	  246			  250
+Toner Level 	  443			  500
+A total of 20 documents were printed.
+
+Do you want to save the final status of printer to a file?(Please press the relevant number.
+1. Yes
+2.No
+1
+Writing to file successful
+Thank you for analysing the printer.
+
+Process finished with exit code 0

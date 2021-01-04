@@ -11,7 +11,6 @@
 
 import utility.MultiColorTerminal;
 import utility.WriteStatusFile;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -106,13 +105,13 @@ public class PrintingSystem {
                 printerStatus + MultiColorTerminal.RESET);
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("\nDo you want to save the final status of printer to a file?(Please press the relevant number." +
+        System.out.println("\nDo you want to save the final status of printer to a file?(Please press the relevant number.)" +
                 "\n1. Yes\n2.No");
         if(scanner.nextInt()==1){
             WriteStatusFile.writeToFile(finalStatus);
         }
         else{
-            System.out.println("No logs saved!\nThank you for using the printer.");
+            System.out.println("No logs saved!\nThank you for analysing the printer.");
         }
     }
 }
